@@ -9,4 +9,4 @@
 - - Latest Covid-19 Data.
 - - Latest Medical News.
 
-## [Live Site]()
+## [Live Site](https://healthcarebd-a10.netlify.app/)
