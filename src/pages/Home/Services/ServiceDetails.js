@@ -7,7 +7,7 @@ const ServiceDetails = () => {
   console.log(services);
 
   return (
-    <div id="services">
+    <div>
       <h2>{services.length}</h2>
       <h1>Can't Get the Idea {serviceId}</h1>
     </div>
