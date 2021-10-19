@@ -8,9 +8,15 @@ const Home = () => {
   return (
     <div id="home">
       <Banner></Banner>
-      <Services></Services>
-      <News></News>
-      <Covid19></Covid19>
+      <div id="services">
+        <Services></Services>
+      </div>
+      <div id="news">
+        <News></News>
+      </div>
+      <div id="covid">
+        <Covid19></Covid19>
+      </div>
     </div>
   );
 };
