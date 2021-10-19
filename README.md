@@ -1,6 +1,6 @@
 # HealthCare BD
 
-### Always Ready to Help
+### We are a leading medical support group in Bangladesh. We are always ready to help.
 
 - Features
 - - We Are Always Ready to Help.
