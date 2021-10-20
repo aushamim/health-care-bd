@@ -12,6 +12,7 @@ const Login = () => {
     isLogIn,
     processLogin,
     nameFormValue,
+    signInUsingGoogle,
   } = useAuth();
   //get email form value
   const getEmailFormValue = (e) => {
@@ -101,9 +102,19 @@ const Login = () => {
             Login
           </Button>
         ) : (
-          <Button variant="primary" type="submit">
-            Register
-          </Button>
+          <>
+            <Button variant="primary" type="submit">
+              Register
+            </Button>
+            <Button
+              onClick={signInUsingGoogle}
+              variant="primary"
+              type="submit"
+              className="mx-2"
+            >
+              Google Sign In
+            </Button>
+          </>
         )}
       </Form>
     </div>

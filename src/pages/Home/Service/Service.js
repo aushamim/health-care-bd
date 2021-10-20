@@ -16,7 +16,7 @@ const Service = (props) => {
           <Card.Body>
             <Card.Title>{service}</Card.Title>
             <Card.Text>{title}</Card.Text>
-            <Link to={`service/${index}`}>
+            <Link to={`/service/${index}`}>
               <Button variant="primary">See Details</Button>
             </Link>
           </Card.Body>

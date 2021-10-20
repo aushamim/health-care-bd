@@ -6,6 +6,8 @@ import {
   updateProfile,
   signOut,
   onAuthStateChanged,
+  signInWithPopup,
+  GoogleAuthProvider,
 } from "firebase/auth";
 import { useState, useEffect } from "react";
 
@@ -108,6 +110,26 @@ const useFirebase = () => {
       });
   };
 
+  // google log in
+
+  const signInUsingGoogle = () => {
+    setIsLoading(true);
+    const GoogleProvider = new GoogleAuthProvider();
+
+    signInWithPopup(auth, GoogleProvider)
+      .then((result) => {
+        // The signed-in user info.
+        const user = result.user;
+        setUser(user);
+      })
+
+      .finally(() => {
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setErr(error.message);
+      });
+  };
   //observer user state change
   useEffect(() => {
     const unSubscribed = onAuthStateChanged(auth, (user) => {
@@ -128,7 +150,7 @@ const useFirebase = () => {
     setIsLoading(true);
     signOut(auth)
       .then(() => {
-        // Sign-out successful.
+        setUser("");
       })
       .finally(() => {
         isLoading(false);
@@ -147,6 +169,7 @@ const useFirebase = () => {
     user,
     logOut,
     isLoading,
+    signInUsingGoogle,
   };
 };
 

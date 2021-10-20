@@ -4,7 +4,7 @@ import useServices from "../../../hooks/useServices";
 const ServiceDetails = () => {
   let { serviceId } = useParams();
   const { services } = useServices([]);
-  console.log(services);
+  console.log("ServiceDetails", services);
 
   return (
     <div>
