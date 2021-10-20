@@ -8,7 +8,7 @@ const SingleNews = (props) => {
 
   return (
     <>
-      <Col sm={1} md={6} lg={3}>
+      <Col sm={1} md={6} lg={3} className="news-card">
         <Card
           style={{ width: "18rem" }}
           className="single-news my-3 shadow p-3 mb-5 bg-body rounded"
@@ -22,7 +22,9 @@ const SingleNews = (props) => {
             <Card.Title>{title}</Card.Title>
 
             <Link to={`/news/${index}`}>
-              <Button variant="primary">Read More</Button>
+              <Button variant="primary" className="news-btn">
+                Read More
+              </Button>
             </Link>
           </Card.Body>
         </Card>

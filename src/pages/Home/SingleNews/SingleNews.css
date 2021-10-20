@@ -6,3 +6,11 @@
   width: 400px;
   height: 200px;
 }
+.news-card {
+  display: flex;
+  justify-content: center;
+}
+.news-btn {
+  border: 0;
+  background-color: #214d72 !important;
+}

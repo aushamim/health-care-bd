@@ -13,7 +13,7 @@ const News = () => {
     <div>
       <Container className="text-center">
         <Row>
-          <h1 className="text-center border border-5 rounded-pill text-primary py-2">
+          <h1 className="text-center border border-5 rounded-pill py-2 news">
             Latest News
           </h1>
 

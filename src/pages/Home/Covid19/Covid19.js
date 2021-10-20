@@ -5,7 +5,7 @@ import covid from "./img/covid.png";
 const Covid19 = () => {
   return (
     <Container className="my-5 ">
-      <h1 className="text-center border border-5 rounded-pill text-primary">
+      <h1 className="text-center border border-5 rounded-pill covid">
         Covid 19
       </h1>
       <Row className="border shadow p-3 mb-5 bg-body rounded">

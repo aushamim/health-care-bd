@@ -11,7 +11,7 @@ import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Footer from "./pages/Footer/Footer";
-import ServiceDetails from "./pages/Home/Services/ServiceDetails";
+import ServiceDetails from "./pages/Home/ServiceDetails/ServiceDetails";
 
 function App() {
   return (

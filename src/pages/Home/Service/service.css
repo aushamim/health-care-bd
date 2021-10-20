@@ -3,3 +3,11 @@
   height: 520px;
   margin-bottom: 30px;
 }
+.service-card {
+  display: flex;
+  justify-content: center;
+}
+.service-btn {
+  border: 0;
+  background-color: #214d72 !important;
+}

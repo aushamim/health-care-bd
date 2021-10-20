@@ -12,9 +12,9 @@ const Header = () => {
       <Navbar
         collapseOnSelect
         expand="lg"
-        bg="primary"
         variant="dark"
         sticky="top"
+        className="nav"
       >
         <Container>
           <Navbar.Brand as={HashLink} to="/home">
@@ -45,15 +45,15 @@ const Header = () => {
               {}
               {user?.email ? (
                 <div>
-                  <Button onClick={logOut} variant="light">
-                    Logout
-                  </Button>
-                  <Navbar.Text className="ms-2">
+                  <Navbar.Text className="ms-2 username">
                     Signed in as:{" "}
                     <span className="text-light fw-bold">
                       {user?.displayName}
                     </span>
                   </Navbar.Text>
+                  <Button onClick={logOut} variant="light">
+                    Logout
+                  </Button>
                 </div>
               ) : (
                 <>

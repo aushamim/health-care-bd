@@ -1,3 +1,13 @@
+.nav {
+  background-color: #2c7595;
+}
 .nav-items {
   align-items: center;
+}
+.username {
+  padding: 5px;
+}
+.nav-link,
+.navbar-text {
+  color: #6af8ff !important;
 }

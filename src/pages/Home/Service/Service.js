@@ -7,7 +7,7 @@ const Service = (props) => {
   const { service, image, index, title } = props.service;
   return (
     <>
-      <Col sm={1} md={6} lg={3}>
+      <Col sm={1} md={6} lg={3} className="service-card">
         <Card
           style={{ width: "18rem" }}
           className="single-service shadow p-3 mb-5 bg-body rounded "
@@ -17,7 +17,9 @@ const Service = (props) => {
             <Card.Title>{service}</Card.Title>
             <Card.Text>{title}</Card.Text>
             <Link to={`/service/${index}`}>
-              <Button variant="primary">See Details</Button>
+              <Button variant="primary" className="service-btn">
+                See Details
+              </Button>
             </Link>
           </Card.Body>
         </Card>
